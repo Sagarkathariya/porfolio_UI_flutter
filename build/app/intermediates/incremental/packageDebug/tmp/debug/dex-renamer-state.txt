@@ -1,4 +1,4 @@
-#Sat May 01 21:03:05 NPT 2021
+#Sun Jul 18 16:34:25 NPT 2021
 base.0=F\:\\Flutter Tutorial\\portfolio\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
 renamed.0=classes.dex
+path.0=classes.dex
