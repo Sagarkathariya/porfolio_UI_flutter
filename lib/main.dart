@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MyApp());
@@ -88,28 +87,28 @@ class MyApp extends StatelessWidget {
                         launch("https://www.facebook.com/mesagarkathariya");
                       },
                       color: Colors.blue,
-                      icon: FaIcon(FontAwesomeIcons.facebook),
+                      icon: Icon(Icons.facebook),
                     ),
                     IconButton(
                       onPressed: () {
                         launch("https://www.instagram.com/sagar.kathariya");
                       },
                       color: Colors.red,
-                      icon: FaIcon(FontAwesomeIcons.instagram),
+                      icon: Icon(Icons.camera_alt),
                     ),
                     IconButton(
                       onPressed: () {
                         launch("https://www.twitter.com/sagarkathariya");
                       },
                       color: Colors.blue,
-                      icon: FaIcon(FontAwesomeIcons.twitter),
+                      icon: Icon(Icons.alternate_email),
                     ),
                     IconButton(
                       onPressed: () {
                         launch("https://www.github.com/Sagarkathariya");
                       },
                       color: Colors.black,
-                      icon: FaIcon(FontAwesomeIcons.github),
+                      icon: Icon(Icons.code),
                     ),
                     IconButton(
                       onPressed: () {
@@ -117,14 +116,14 @@ class MyApp extends StatelessWidget {
                             "https://www.linkedin.com/in/sagar-kathariya-0623a3170/");
                       },
                       color: Colors.blueGrey,
-                      icon: FaIcon(FontAwesomeIcons.linkedin),
+                      icon: Icon(Icons.work),
                     ),
                     IconButton(
                       onPressed: () {
                         launch("https://www.Sagarkathariya.com.np");
                       },
                       color: Colors.blueGrey,
-                      icon: FaIcon(FontAwesomeIcons.link),
+                      icon: Icon(Icons.link),
                     ),
                   ],
                 ),
