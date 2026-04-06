@@ -25,12 +25,12 @@ class MyApp extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
                     vertical: 30.0,
-                    horizontal: 20.0,
+                    horizontal: 20,
                   ),
                   child: Column(
                     children: <Widget>[
                       CircleAvatar(
-                        backgroundImage: AssetImage("images/sagar.jpg"),
+                        backgroundImage: AssetImage("images/sagar.png"),
                         radius: 80.0,
                       ),
                       SizedBox(
@@ -38,10 +38,11 @@ class MyApp extends StatelessWidget {
                       ),
                       Text(
                         "Sagar Kathariya",
-                        style:TextStyle(
+                        style: TextStyle(
                           fontSize: 25.0,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,),
+                          color: Colors.black,
+                        ),
                       ),
                       SizedBox(
                         height: 4.0,
@@ -57,7 +58,7 @@ class MyApp extends StatelessWidget {
                         height: 0.0,
                       ),
                       Text(
-                        "Hello! My name is Sagar Kathariya. I am a Web and App Developer & also a digital advertiser. I am studying Bachelor of Computer Application at Dhangadhi Engineering College, Dhangadhi. Currently I am living in Dhangadhi, Kailali, Nepal.",
+                        "Hello, I'm Sagar Kathariya, A TeCH Enthusiast from Dhangadhi. My current Interest in Java, Spring Boot, Angular, ASP.NET, JavaScript, Mobile Application Development & Video Editing.",
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                           fontSize: 15.0,
@@ -84,10 +85,9 @@ class MyApp extends StatelessWidget {
                   children: <Widget>[
                     IconButton(
                       onPressed: () {
-                        launch(
-                            "https://www.facebook.com/mesagarkathariya");
+                        launch("https://www.facebook.com/mesagarkathariya");
                       },
-                      color: Colors.lightBlue,
+                      color: Colors.blue,
                       icon: FaIcon(FontAwesomeIcons.facebook),
                     ),
                     IconButton(
@@ -101,15 +101,15 @@ class MyApp extends StatelessWidget {
                       onPressed: () {
                         launch("https://www.twitter.com/sagarkathariya");
                       },
-                      color: Colors.blueAccent,
+                      color: Colors.blue,
                       icon: FaIcon(FontAwesomeIcons.twitter),
                     ),
                     IconButton(
                       onPressed: () {
-                        launch("https://www.youtube.com/sagarkathariya");
+                        launch("https://www.github.com/Sagarkathariya");
                       },
-                      color: Colors.red,
-                      icon: FaIcon(FontAwesomeIcons.youtube),
+                      color: Colors.black,
+                      icon: FaIcon(FontAwesomeIcons.github),
                     ),
                     IconButton(
                       onPressed: () {
@@ -147,7 +147,9 @@ class MyApp extends StatelessWidget {
                         "https://www.xda-developers.com/files/2017/05/AAEAAQAAAAAAAAg8AAAAJGFhMDRkNmMyLTY5M2EtNDgwYS1iMWE4LTk2YThkYTM0ODY4OQ.jpg"),
                   ),
                   title: Text("Web Developer"),
-                  subtitle: Text("HTML, JavaScript, CSS, PHP, JSP & Angular"),
+                  subtitle: Text(
+                    "HTML, JavaScript, CSS, PHP, JSP & Angular",
+                  ),
                 ),
               ),
               Card(
@@ -159,7 +161,18 @@ class MyApp extends StatelessWidget {
                         "https://appinventiv.com/blog/wp-content/uploads/2017/06/Effective-Ways-to-Choose-the-Best-Mobile-App-Developer.jpg"),
                   ),
                   title: Text("App Developer"),
-                  subtitle: Text("Dart and Flutter, JAVA, C++ & VB.NET"),
+                  subtitle: Text("Dart and Flutter, JAVA, C++, Android"),
+                ),
+              ),
+              Card(
+                elevation: 3.0,
+                child: ListTile(
+                  leading: CircleAvatar(
+                      radius: 30.0,
+                      backgroundImage: NetworkImage(
+                          "https://i0.wp.com/marketbusinessnews.com/wp-content/uploads/2018/08/Digital-Marketing.jpg?ssl=1")),
+                  title: Text("Digital Advertiser"),
+                  subtitle: Text("Page Promotion, Post Boosting, etc."),
                 ),
               ),
               SizedBox(
